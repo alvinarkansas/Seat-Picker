@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Final Project</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Seat Picker</h1>
+        </div>
+        <div id="seatSpace">
+            <div id="rowLetter">
+                <h5>A</h5>
+                <h5>B</h5>
+                <h5>C</h5>
+                <h5>D</h5>
+                <h5>E</h5>
+                <h5>F</h5>
+                <h5>G</h5>
+                <h5>H</h5>
+            </div>
+            <div id="selector">
+                <div class="rowA">
+                </div>
+                <div class="rowB">
+                </div>
+                <div class="rowC">
+                </div>
+                <div class="rowD">
+                </div>
+                <div class="rowE">
+                </div>
+                <div class="rowF">
+                </div>
+                <div class="rowG">
+                </div>
+                <div class="rowH">
+                </div>
+                <div class="rowI">
+                </div>
+                <div class="rowJ">
+                </div>
+            </div>
+        </div>
+        <div id="spaceForScreen">
+            <h4 id="screen">SCREEN</h4>
+        </div>
+        <div id="spaceForOrder" onclick="addSeatNumToTicket(sortSeatNum(removeHashtag(pickedSeat)));ticketOn();">
+            <h3 id="order">ORDER NOW</h3>
+        </div>
+        <div id="overlay" onclick="ticketOff()">
+            <img src="img/mi-fallout.jpg" class="moviePoster">
+            <div id="ticket">
+                <h2 id="label">Your Ticket is Here!</h2>
+                <h2 id="judulFilm">Mission Impossible: Fallout</h2>
+                <h3 id="labelSeat">Seat Number: </h3>
+                <h4 class="seatNumberFinal"></h4>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

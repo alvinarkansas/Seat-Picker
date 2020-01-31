@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    background-color: #25404d;
+    overflow: hidden;
+}
+#header {
+    display: flex;
+    width: 100vw;
+    height: 6vw;
+    background-color: #f0c246;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    color: #25404d;
+    padding: 10px 40px;
+}
+#seatSpace {
+    margin-top: 40px;
+    display: flex;
+    width: 100vw;
+    height: 80%; /*425px;*/
+    justify-content: center;
+}
+#colNumber {
+    display: flex;
+}
+#rowLetter {
+    display: block;
+}
+#rowLetter h5, #colNumber h5 {
+    color: gold;
+    line-height: 16px;
+}
+#selector {
+    width: 650px;
+}
+.row, .rowA, .rowB, .rowC, .rowD, .rowE, .rowF, .rowG, .rowH, .rowI, .rowJ {
+    display: flex;
+    justify-content: center;
+}
+.seat {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    margin: 5px 5px;
+}
+.seat:hover {background-color: #a30202;}
+
+#spaceForScreen {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+#screen {
+    color: #25404d;
+    background-color: whitesmoke;
+    width: 700px;
+    height: 20px;
+    text-align: center;
+    letter-spacing: 3pt;
+}
+#spaceForOrder {
+    width: 100vw;
+    height: 7vw;
+    border-top: 2px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+#order {
+    color: gold;
+}
+#spaceForOrder:hover {
+    background-color: #375361;
+    cursor: pointer;
+    color: gold;
+}
+
+/*overlay & ticket*/
+#overlay {
+    position: fixed; /*supaya overlay semua isi page*/
+    display: none; /*biar defaultnya hidden*/
+    width: 100%; /* full width (cover the whole page) */
+    height: 100%; /* full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7); /* background hitam semi transparan */
+    cursor: pointer;
+}
+#label, #labelSeat{
+    margin-left: 35px;
+    color: #25404d;
+    font-weight: 400;
+}
+#judulFilm {
+    margin-left: 35px;
+    margin-right: 35px;
+    color: #25404d;
+    font-size: xx-large;
+    font-weight: 700;
+    border-bottom: 1px solid #25404d;
+    padding-bottom: 5px;
+}
+#ticket {
+    background-color: whitesmoke;
+    border-radius: 0px 10px 10px 0px;
+    width: 675px;
+    height: 355px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    display: block;
+    justify-content: left;
+}
+.moviePoster {
+    height: 355px;
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.seatNumberFinal {
+    color: brown;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+    margin-left: 35px;
+}
