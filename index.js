@@ -77,5 +77,5 @@ function ticketOff() {
     document.querySelector('#overlay').style.display = 'none';
 }
 function addSeatNumToTicket(array) {
-    document.querySelector(".seatNumberFinal").innerHTML = array;
+    document.querySelector("#seatNumberFinal").innerHTML = array;
 }
